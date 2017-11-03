@@ -1,0 +1,260 @@
+.main-header {
+    width:100%;
+    height:48px;
+    background: rgb(102, 110, 232);
+    display: flex;
+    justify-content: flex-end;
+}
+.main-nav {
+
+
+}
+.main-nav ul {
+    display: flex;
+    width:100%;
+    height:100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+#searchBar {
+    display: flex;
+    height: 48px;
+    background: rgba(0, 0, 0, .2);
+    padding: 0 48px 0 20px;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(233, 233, 233);
+}
+.main-nav ul li {
+    margin-left: 32px;
+    color: #fff;
+}
+.main-nav ul li img{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.aside-top{
+    width: 100%;
+    height:100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.aside-top_h1{
+    font-weight: 600;
+    font-size: 28px;
+    color: #6B6F81;
+}
+.aside-top_h1 span{
+    color: #8A91FF;
+}
+.aside-top_device-togle_wrapper{
+    display: flex;
+    border: solid gray 1px;
+    border-radius: 30px;
+    padding: 5px;
+}
+.aside-top_toggle{
+    position: relative;
+    display: inline-block;
+    width: 106px;
+    height: 38px;
+}
+.aside-top_toggle input {
+    display:none;
+}
+.aside-top_slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.aside-top_slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+aside div label input:checked + .aside-top_slider {
+  background-color: #2196F3;
+}
+aside div label input:focus + .aside-top_slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+aside div label input:checked + .aside-top_slider:before {
+  -webkit-transform: translateX(68px);
+  -ms-transform: translateX(68px);
+  transform: translateX(68px);
+}
+.aside-top_slider.aside-top_round {
+  border-radius: 34px;
+}
+.aside-top_slider.aside-top_round:before {
+  border-radius: 50%;
+}
+.aside-top_dropdown{
+    border: none;
+    outline: none;
+    border-radius: 34px;
+    width: 300px;
+    margin-left: 20px;
+}
+
+
+.top-section {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column;
+}
+.top-container{
+    display: flex;
+}
+
+.left-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15vw;
+    background: #F8F9FD;
+}
+.left-column h1 {
+    font-size: 28px;
+    color: #464855;
+    font-weight: 600;
+    margin-bottom: 35px;
+    line-height:48px;
+}
+.review-wrapper{
+    display: flex;
+    margin-bottom: 35px;
+    align-items: center;
+}
+
+.left-column h3 {
+    color: #666EE8;
+    font-size: 28px;
+    margin-bottom: 48px;
+}
+.left-column h3 span {
+    color: #898EA2;
+    font-size: 14px;
+    margin-bottom: 16px;
+    display: contents;
+}
+.main-product-desc{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: 48px;
+}
+.qty-wrapper {
+    display: flex;
+    width: 70%;
+}
+.qty {
+    flex-grow: 1;
+    padding: 0 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 22px;
+    background: #fff;
+    border: solid 1px rgba(0,0,0,0.2);
+}
+.qty-count{
+    min-width: 40px;
+    text-align: center
+}
+.qty img {
+    width:16px;
+}
+.main-cta {
+    flex-grow: 1;
+    padding: 15px 35px;
+    background: #666EE8;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.main-cta:focus {
+    outline: none;
+}
+
+.right-column{
+    height: 100%;
+    width: 50%;
+    background: #F8F9FD;
+    padding-left: 6%;
+}
+.right-column img{
+    margin-bottom: -20%;
+}
+
+.top-section_bottom-row{
+    width: 100%;
+    height: 230px;
+    padding: 0 33% 0 15vw;
+    display: flex;
+    justify-content: flex-start
+}
+.bottom-row_info-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+
+}
+.info-sub-container{
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.info-block{
+    display: flex;
+    flex-flow: column;
+    /* align-items: center; */
+    width: 25%;
+    flex-wrap: nowrap;
+    text-align: start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
